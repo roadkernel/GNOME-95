@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>egirl.dev</title>
+    <link rel="icon" href="pics/devlol.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <audio id="backgroundMusic" src="sounds/onload.mp3" preload="auto"></audio>
+  </head>
+  <body>
+    <div id="loading-animation">
+      <div id="fadeinout">
+          <img src="loader-logo/new-logo2.png" alt="LogoLoad" id="LogoLoad" class="centered">
+          <div class="loading-slider"> 
+            <h1 id="loading-text-1"></h1>
+            <p id="loading-text-2"></p>
+            <p id="loading-text-3"></p>
+            <p id="loading-text-4"></p>
+            <div id="svg-container">
+              <img src="pics/no_phones.svg" alt="No Phones" id="no-phones-svg">
+            </div>
+          </div>
+      </div>
+    </div>
+<div class="main-site">    
+        <div class="desktop">
+            <div class="icon" id="app1"><img src="pics/pdf.png" alt=""><br>family.pdf</div> 
+            <div class="icon" id="app2"><img src="pics/terminal.png" alt=""><br>terminal</div> 
+            <div class="icon" id="app3"><img src="pics/contacts.svg" alt=""><br>Contacts</div>
+            <div class="icon" id="app4"><img src="pics/reset.png" alt=""><br>reset.exe</div> 
+            <div class="icon" id="app5"><img src="pics/notes.png" alt=""><br>soon-list.txt</div> 
+            <div class="icon" id="app6"><img src="pics/browser.png" alt=""><br>WaterFox</div> 
+            <div class="icon" id="app7"><img src="pics/folder_icon.png" alt=""><br>WIP</div> 
+            <div id="popupfamily" class="popupfamily draggable glowbehind ui-style" style="display: none;">
+              <div class="bar">
+                <span class="bar-text-ui">Sweet-Sweet Family</span>
+                <span id="closeBtn" class="close-button-ui-basic">x</span>
+              </div>
+              <img src="pics/family.jpg" class="familypicture" alt="">
+              <h1>since 2020</h1>
+              <p>Thanks to everybody who stayed.</p>
+              <p>Thanks to everybody who's been with us.</p>
+          </div>
+          </div>
+          <div class="feed-window draggable glowbehind">
+            <div class="bar">
+                <span class="bar-text-ui">Browser</span>
+                <span id="close-feed" class="close-button-ui-basic">x</span>
+            </div>
+            <div class="tabs">
+                <button class="tablinks" onclick="openTab(event, 'Feed')">Feed</button>
+                <button class="tablinks" onclick="openTab(event, 'HOA')">HOA</button>
+                <button class="tablinks" onclick="openTab(event, 'testTAB')">Corp</button>
+            </div>
+            <div id="Feed" class="tabcontent">
+                <div id="feedContainer"></div>
+                <h1>&#173;</h1>
+            </div>
+            <div id="HOA" class="tabcontent">
+              <div class="grid-container">
+                <div class="grid-item">
+                    <img src="pics/HOA/menwho.png" alt="Image 1">
+                    <h1>meNwho</h1>
+                    <p>Retarded telegram caveman
+                      who tried extorting wsarch out of 10 dollars (lmao) 
+                      and when begged nyaw not to communicate with me.
+                      Simped his way into nyaw dms and sent her 50$ in xmr
+                      after she blocked him cuz he is retarded and annoying.
+                      E-girl simp, claimed 2be scary RaaS enthusiast.
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <img src="pics/HOA/s.png" alt="Image 2">
+                    <h1>Sasha</h1>
+                    <p>Funny individual who stalked some random ass girl.
+                      Doxed her and left a kitten next to her door and ran away after she 
+                      told him she is going to call police on him. And when he asked me
+                      if I could provide some of her additional personal info.
+                      Hilarious dude, but delusional as fuck.</p>
+                </div>
+            </div>
+            <div class="bin">
+              <p>
+                For more retards you can check-out pastes made by my friends:
+              </p>
+              <div class="grid-container">
+              <div class="grid-item-contact">
+                <a href="https://doxbin.com/user/pearl" target="_blank">
+                  /user/pearl
+                </a>
+              </div>
+              <div class="grid-item-contact">
+                <a href="https://doxbin.com/user/bhc" target="_blank">
+                  /user/bhc
+                </a>
+              </div>
+          </div>
+        </div>
+            </div>
+            <div id="testTAB" class="tabcontent">
+              <div class="retardedcontent">
+              <video controls class="corpcont">
+                <source src="vids/corp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="retardedcontent">
+              <img src="vids/zczz.gif" class="corpcont">
+            </div>
+            <div class="retardedcontent">
+              <img src="pics/trio.png" class="corpcont">
+            </div>
+            <h1>&#173;</h1>
+            </div>
+        </div>
+          <div class="updates draggable glowbehind  trans-ease-boxshadow hoverglow-retard">
+            <div id="uptpop">
+                <div class="bar">
+                  <span class="bar-text-ui">Comming soon!</span>
+                  <span id="close-up-ui" class="close-button-ui-basic">x</span>
+                </div>
+                <p>soon:</p>
+                <div class="soonlist">
+                  <p>&gt; Filesys | &#9200;</p>
+                  <p>&gt; Settings | &#9200;</p>
+                </div>
+              </div>
+        </div>
+          <div class="noteswindow draggable glowbehind ui-style" style="display: none;">
+            <div id="notespop">
+                <div class="bar">
+                  <span class="bar-text-ui">Contacts</span>
+                  <span id="close-notes-ui" class="close-button-ui-basic">x</span>
+                </div>
+                <div class="container">
+                  <p>tele: @egirl420</p>
+                  <a href="https://t.me/egirl420" target="_blank">
+                    <img id="telelogo" src="pics/pfp.png" alt="Telelogo">
+                </a>
+              </div>
+              </div>
+        </div>
+        <div class="taskbar">
+            <div class="retard">
+          <div class="start"></div>
+          <div class="test-retard" id="test1">Retard Test</div>
+          <div class="game" id="test2">Paint</div>
+          <div class="player">
+            <div id="player">Music Player</div>
+            </div>
+          </div>
+          <div class="time" id="utc-time"></div>
+        </div>
+        <div id="start-window" style="display: none;">
+            <button id="settings">Soon</button>
+            <button id="changeBackground">Wallpaper</button>
+            <button id="redirectButton">Turn Off</button>
+        </div>
+        <div id="rpopup" class="draggable glowbehind ui-style" style="display: none;">
+            <div class="popup-content">
+              <div class="bar">
+                <span class="bar-text-ui">Retard Test</span>
+                <span id="close-btn" class="close-button-ui-basic">x</span>
+              </div>
+                <p>You are <span id="retard-level"></span>% retarded</p>
+                <button id="reroll-btn">Reroll</button>
+            </div>
+        </div>
+    <div id="tpopup" class="draggable glowbehind" style="display: none;">
+      <div class="bar">
+        <span class="bar-text-ui">Paint</span>
+        <span id="close-btn2" class="close-button-ui-basic">x</span>
+      </div>
+        <div class="popup-content">
+            <div class="game-container">
+                <canvas id="canvas" width="600" height="600"></canvas>
+        </div>
+        <button id="clear-btn">Clear</button>
+        <button id="draw-btn">Draw</button>
+        <button id="erase-btn">Erase</button>
+        <input type="color" id="color-picker">
+    </div>
+</div>
+<div class="conwin draggable glowbehind" style="display: none"> 
+  <div id="conpop">
+      <div class="bar">
+        <span class="bar-text-ui">console</span>
+        <span id="close-console-ui" class="close-button-ui-basic">x</span>
+      </div>
+      <div class="console"></div>
+    </div>
+</div>
+<div class="music-player draggable glowbehind ui-style">
+  <div class="bar">
+    <span class="bar-text-ui">Music Player</span>
+    <span id="close" class="close-button-ui-basic">x</span>
+  </div>
+  <div class="controls">
+    <div id="song-indicator">Selected Song: <span id="current-song"></span></div>
+    <audio id="audio-player" loop>
+      <source src="music/heat-stick.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br />
+      <button id="play">Play</button>
+      <button id="stop">Pause</button>
+      <button id="mute">Mute</button>
+      <button id="skip">Next</button>
+  </div>
+  <img src="pics/boombox.png" class="player-image">
+</div>
+<div class="memefolder-open">
+  <div class="folder-child draggable glowbehind"> 
+        <div class="bar">
+          <span class="bar-text-ui">Meme Folder</span>
+          <span id="close-folder-ui" class="close-button-ui-basic">x</span>
+        </div>
+        <div class="pictures">
+          <div class="pictures">
+            <div class="picture-row">
+              <img src="pics/memes/1.png" alt="Picture 1">
+              <img src="pics/memes/2.png" alt="Picture 2">
+              <img src="pics/memes/3.png" alt="Picture 3">
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+<script src="select-user-app.js"></script>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="loader.js"></script>
+  <!-- redone loader | check /loader.js DONT  CHANGE IT RN -->
+  <!-- beware of draggable func breaking the whole js, keep it in the end in case of it failing -->
+  <script src="sound.js"></script>
+</html>
